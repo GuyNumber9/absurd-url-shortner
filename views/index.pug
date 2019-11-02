@@ -1,0 +1,13 @@
+html(lang="en")
+    head
+        title URL Shortener
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="css/main.css" rel="stylesheet" type="text/css")
+    body
+        h1 URL Shortener
+
+        form(action="/api/shorturl/new" method="POST")
+            label(for="url") URL
+            input(type="text" name="url")/
+            input(type="submit")/
